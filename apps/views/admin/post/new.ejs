@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <!-- https://www.tiny.cloud/docs/quick-start/ -->
+    <script src="https://cdn.tiny.cloud/1/htnul2v81uj2c8pipo2ydsw9cm34yuzk98fug9dznt6cnrkc/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+      tinymce.init({
+        selector: 'textarea'
+      });
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/admin">Blog Admin</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/admin/post">Posts</a></li>
+                <li><a href="/admin/user">Blog Admin</a></li>
+              </ul>
+            </div>
+        </nav>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Add new post
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <% if (data && data.error) {%>
+                            <div id="login-alert" class="alert alert-danger col-sm-12">
+                                <%= data.error %>
+                            </div>
+                        <%}%>
+
+                        <form role="form" method="POST" action="/admin/post/new/">
+                            <div class="form-group">
+                                <label>Tilte</label>
+                                <input class="form-control" name="title"  placeholder="Title">                           
+                            </div>
+                            <div class="form-group">
+                                <label>Content</label>
+                                <textarea class="form-control" name="content"  placeholder="Content"></textarea>                         
+                            </div>
+                            <div class="form-group">
+                                <label>Author</label>
+                                <input class="form-control" name="author"  placeholder="Author">                           
+                            </div>
+
+                            <input type="submit" name="" value="Add" class="btn btn-success" />
+                        </form>
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+
+    </div>
+</body>
+</html>

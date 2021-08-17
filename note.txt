@@ -1,0 +1,59 @@
+Khoi tao
+=======
+npm init 
+
+npm install express --save
+
+Cai dat middlewear
+=======
+npm install config --save
+
+npm install body-parser --save
+
+npm install express-session --save
+
+Cai dat Template va Template Engine
+=======
+npm install ejs --save
+
+Cai dat MySQL
+=======
+npm install mysql --save
+
+=======
+boostrap cdn
+signup html boostrap
+
+https://gist.github.com/cuongbangoc/1f026a2aa0c58a116821fbd91380a519
+
+=======
+npm install q --save
+
+=======
+npm install bcrypt --save
+
+=======
+bootsnipp.com	// lấy theme khung đăng nhập https://bootsnipp.com/snippets/2X0r
+
+=======
+nav bootstrap // google
+https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+
+https://technext.github.io/startbootstrap-sb-admin-2/pages/tables.html
+or
+https://startbootstrap.com/previews/sb-admin-2
+
+https://www.tiny.cloud/docs/quick-start/#
+
+=======
+https://startbootstrap.com/theme/clean-blog
+
+=======
+socketio // google
+
+https://github.com/rauchg/chat-example/blob/master/index.html
+
+npm install socket.io --save
+=======
+
+

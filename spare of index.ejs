@@ -1,0 +1,17 @@
+    <!-- Post preview-->
+                    <% if (data && data.posts) {%>
+                        <% for(var i = 1; i < data.posts.length; i++) {%>
+                            <div class="post-preview">
+                                <a href="#">
+                                    <h2 class="post-title"><%= data.posts[i+1].title %></h2>
+                                    <h3 class="post-subtitle"><%= data.posts[i+1].content %></h3>
+                                </a>
+                                <p class="post-meta">
+                                    Posted by
+                                    <a href="#!"><%= data.posts[i+1].author %></a>
+                                    on <%= data.posts[i+1].created_at %>
+                                </p>
+                            </div>
+
+                       <%}%>
+                    <%}%>
